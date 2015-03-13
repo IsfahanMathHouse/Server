@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace Server
+namespace MathHouse.Server
 {
 	public class BundleConfig
 	{

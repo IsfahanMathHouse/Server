@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Server.Controllers
+namespace MathHouse.Server.Controllers
 {
 	public class HomeController : Controller
 	{

@@ -1,8 +1,8 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(Server.Startup))]
-namespace Server
+[assembly: OwinStartupAttribute(typeof(MathHouse.Server.Startup))]
+namespace MathHouse.Server
 {
     public partial class Startup
     {
