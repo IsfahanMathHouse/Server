@@ -26,5 +26,10 @@ namespace MathHouse.Server.Controllers
 
 			return View();
 		}
+
+		public ActionResult GroupsList()
+		{
+			return View();
+		}
 	}
 }

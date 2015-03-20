@@ -17,5 +17,8 @@ namespace MathHouse.Domain.Entities
 
 		[InverseProperty("Group")]
 		public ICollection<UserGroup> UserGroups { get; set; }
+
+		[InverseProperty("Group")]
+		public ICollection<Message> Messages { get; set; }
 	}
 }

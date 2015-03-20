@@ -10,7 +10,7 @@ using MathHouse.Server.Models;
 
 namespace MathHouse.Server.Controllers
 {
-	[Authorize]
+	[Authorize(Roles = "Admin")]
 	public class ManageController : Controller
 	{
 		private ApplicationSignInManager _signInManager;

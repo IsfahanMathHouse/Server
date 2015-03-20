@@ -13,6 +13,8 @@ namespace MathHouse.Domain.Entities
 {
 	public class User : IdentityUser<int, UserLogin, UserRole, UserClaim>
 	{
+		[Index(IsUnique = true)]
+		[Required]
 		[MaxLength(256)]
 		public string DisplayName { get; set; }
 

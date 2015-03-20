@@ -56,6 +56,8 @@
     <Compile Include="Entities\Group.cs" />
     <Compile Include="Entities\GroupAccessLevel.cs" />
     <Compile Include="Entities\GroupPublicity.cs" />
+    <Compile Include="Entities\Message.cs" />
+    <Compile Include="Entities\MessageImportance.cs" />
     <Compile Include="Entities\Role.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Entities\UserGroup.cs" />
