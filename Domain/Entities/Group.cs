@@ -15,6 +15,8 @@ namespace MathHouse.Domain.Entities
 		public int GroupPublicityId { get; set; }
 		public GroupPublicity GroupPublicity { get; set; }
 
+		public string Description { get; set; }
+
 		[InverseProperty("Group")]
 		public ICollection<UserGroup> UserGroups { get; set; }
 

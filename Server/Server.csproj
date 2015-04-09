@@ -169,6 +169,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MessagingController.cs" />
@@ -178,31 +179,44 @@
     <Compile Include="Infrastructure\JsonNetResult.cs" />
     <Compile Include="Infrastructure\SpecializedController.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AdminModels.cs" />
     <Compile Include="Models\GroupsListViewModel.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-rtl.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\ui-grid.min.css" />
+    <Content Include="Content\ui-grid.svg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Scripts\respond.js" />
-    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\App\groupsList.js" />
+    <Content Include="Scripts\Libs\ui-grid.min.js" />
+    <Content Include="Scripts\Libs\angular.js" />
+    <Content Include="Scripts\Libs\angular.min.js" />
+    <Content Include="Scripts\Libs\bootstrap.js" />
+    <Content Include="Scripts\Libs\bootstrap.min.js" />
+    <Content Include="Scripts\Libs\angular.min.js.map" />
+    <Content Include="Content\ui-grid.eot" />
+    <Content Include="Content\ui-grid.ttf" />
+    <Content Include="Content\ui-grid.woff" />
+    <None Include="Scripts\Libs\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\Libs\jquery-1.10.2.js" />
+    <Content Include="Scripts\Libs\jquery-1.10.2.min.js" />
+    <None Include="Scripts\Libs\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\Libs\jquery.validate.js" />
+    <Content Include="Scripts\Libs\jquery.validate.min.js" />
+    <Content Include="Scripts\Libs\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\Libs\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\Libs\modernizr-2.6.2.js" />
+    <Content Include="Scripts\Libs\respond.js" />
+    <Content Include="Scripts\Libs\respond.min.js" />
+    <Content Include="Scripts\Libs\ui-bootstrap-tpls-0.12.1.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -220,7 +234,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Scripts\Libs\jquery-1.10.2.min.map" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
     <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
@@ -242,6 +256,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\GroupsList.cshtml" />
+    <Content Include="Views\Admin\Groups.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
