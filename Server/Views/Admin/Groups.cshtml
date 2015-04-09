@@ -11,9 +11,30 @@
 			<h3 class="modal-title">{{title}}</h3>
 		</div>
 		<div class="modal-body">
-			عنوان گروه:<input type="text" ng-model="group.name" />
-			باز یا بسته:<select ng-options="p.groupPublicityId as p.name for p in groupPublicities" ng-model="group.groupPublicityId"></select>
-			شرح:<textarea ng-model="group.description"></textarea>
+			<div class="row form-group">
+				<div class="col-xs-4">
+					عنوان گروه:
+				</div>
+				<div class="col-xs-8">
+					<input type="text" ng-model="group.name" />
+				</div>
+			</div>
+			<div class="row form-group">
+				<div class="col-xs-4">
+					باز یا بسته:
+				</div>
+				<div class="col-xs-8">
+					<select ng-options="p.groupPublicityId as p.name for p in groupPublicities" ng-model="group.groupPublicityId"></select>
+				</div>
+			</div>
+			<div class="row form-group">
+				<div class="col-xs-4">
+					شرح:
+				</div>
+				<div class="col-xs-8">
+					<textarea ng-model="group.description"></textarea>
+				</div>
+			</div>
 		</div>
 		<div class="modal-footer">
 			<button class="btn btn-primary" ng-click="save()">ذخیره</button>
