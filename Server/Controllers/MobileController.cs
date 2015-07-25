@@ -11,6 +11,7 @@ using System.Web.Http.Cors;
 namespace MathHouse.Server.Controllers
 {
 	[EnableCors(origins: "*", headers: "*", methods: "*")]
+	[RoutePrefix("api/mobile")]
 	public class MobileController : ApiController
 	{
 		[HttpPost]
@@ -33,11 +34,12 @@ namespace MathHouse.Server.Controllers
 		}
 
 		[HttpPost]
-		public GroupViewModel GetGroup(int groupId)
+		[Route("DownloadGroupInfo")]
+		public GroupViewModel DownloadGroupInfo(GetGroupInfoRequest request)
 		{
-			using (var context = ImhDbContext.Get())
+      using (var context = ImhDbContext.Get())
 			{
-				var group = context.Groups.Where(x => x.GroupId == groupId).Select(g => new GroupViewModel
+				var group = context.Groups.Where(x => x.GroupId == request.GroupId).Select(g => new GroupViewModel
 					{
 						GroupId = g.GroupId,
 						MessageCount = g.Messages.Count,

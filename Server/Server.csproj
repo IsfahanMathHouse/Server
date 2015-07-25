@@ -193,6 +193,7 @@
     <Compile Include="Infrastructure\SpecializedController.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\AdminModels.cs" />
+    <Compile Include="Models\GetGroupInfoRequest.cs" />
     <Compile Include="Models\GroupsListViewModel.cs" />
     <Compile Include="Models\GroupViewModel.cs" />
     <Compile Include="Models\ManageViewModels.cs" />

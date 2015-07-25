@@ -22,5 +22,16 @@ namespace MathHouse.Server
 			RouteConfig.RegisterRoutes(RouteTable.Routes);
 			BundleConfig.RegisterBundles(BundleTable.Bundles);
 		}
+
+		//protected void Application_BeginRequest()
+		//{
+		//	if (Request.Headers.AllKeys.Contains("Origin") && Request.HttpMethod == "OPTIONS")
+		//	{
+		//		Response.Headers.Add("Access-Control-Allow-Headers", "content-type");
+		//		Response.Headers.Add("Access-Control-Allow-Origin", "*");
+		//		Response.StatusCode = 200;
+		//		Response.Flush();
+		//	}
+		//}
 	}
 }
