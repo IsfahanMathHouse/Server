@@ -34,23 +34,5 @@ namespace MathHouse.Server.Controllers
 		{
 			return View();
 		}
-
-		public JsonResult GetGroups()
-		{
-			using (var context = ImhDbContext.Get())
-			{
-				var groups = context.Groups.Select(x => new GroupsListViewModel
-				{
-					GroupId = x.GroupId,
-					MessageCount = x.Messages.Count,
-					Name = x.Name,
-					Owner = x.Owner.DisplayName,
-					OwnerUserId = x.OwnerUserId,
-					Publicity = x.GroupPublicity.Name,
-					UsersCount = x.UserGroups.Count
-				}).ToList();
-				return Json(groups);
-			}
-		}
 	}
 }
