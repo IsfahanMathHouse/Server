@@ -8,7 +8,7 @@ namespace MathHouse.Domain.Entities
 {
 	public class MessageImportance
 	{
-		public int MessageImprotanceId { get; set; }
+		public int MessageImportanceId { get; set; }
 		public string Name { get; set; }
 		public int? Stars { get; set; }
 	}

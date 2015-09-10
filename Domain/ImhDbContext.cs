@@ -32,5 +32,7 @@ namespace MathHouse.Domain
 		public DbSet<Group> Groups { get; set; }
 		public DbSet<GroupAccessLevel> GroupAccessLevels { get; set; }
 		public DbSet<GroupPublicity> GroupPublicities { get; set; }
+		public DbSet<Message> Messages { get; set; }
+		public DbSet<MessageImportance> MessageImportances { get; set; }
 	}
 }
